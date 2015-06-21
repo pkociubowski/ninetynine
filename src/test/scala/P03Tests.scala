@@ -20,13 +20,13 @@ class P03Tests extends FlatSpec with Matchers {
 
   "asking for non existing element" should "throw NoSuchElementException" in {
     intercept[NoSuchElementException] {
-      val ret = p03.nth(4, List(1,2,3))
+      val ret = p03.nth(4, List(1, 2, 3))
     }
   }
 
   "asking for negative nth element" should "throw NoSuchElementException" in {
     intercept[NoSuchElementException] {
-      val ret = p03.nth(-1, List(1,2,3))
+      val ret = p03.nth(-1, List(1, 2, 3))
     }
   }
 

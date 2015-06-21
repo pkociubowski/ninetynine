@@ -1,5 +1,5 @@
 import org.scalatest._
-import problems.{P02, P01}
+import problems.P02
 
 /**
  * Created by patryk on 18.06.15.

@@ -3,13 +3,9 @@ package problems
 
 class P01 {
 
-  def last(list: Seq[Int]): Int = {
-    if (list.isEmpty)
-      throw new NoSuchElementException("list cannot be empty")
-    else if (list.length == 1)
-      list.head
-    else
-      last(list.tail)
+  def last(list: Seq[Int]): Int = list match {
+    case Nil => throw new NoSuchElementException("list cannot be empty")
+    case List(elem) => elem
+    case _ => last(list.tail)
   }
-
 }
